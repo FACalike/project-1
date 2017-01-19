@@ -1,5 +1,15 @@
 # Project 1: Build a team blog
 
+##Aim
+
+This is a beginner's project to remind ourselves how to create a good, responsive webpage without any frameworks. To begin we will use simple HTML and CSS with vanilla Javascript for enhancements. We may fork from and expand on this project in follow up projects.
+
+The focus is:
+
+* good user experience on all platforms
+* learn and use best practise
+* don't be reliant on frameworks and libraries!
+
 ##Basic git workflow:
 
 **master**: our primary development branch. Since everyone is still learning/relearning git, do NOT merge anything into master until I've had a chance to check it. Just leave your work in a pull request.

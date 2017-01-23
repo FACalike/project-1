@@ -4,14 +4,32 @@
   <meta charset="UTF-8">
   <title>Team 2's projects</title>
     <style>
-        .banner {
+        
+        .body{
+            margin: 0px;
+        }
+        #lead-banner {
             background-image: url("images/tech-wallpaper.png")
         }
+        
+        
+        #main-navigation a: hover {
+            text-decoration: underline;
+        }
+        
+        #main-navigtaion ul{
+            list-style: none;
+            display: inline-flex; 
+            flex-direction: row;
+        }
+        
+        
+        
     </style>
 </head>
 <body>
- //  picture banner 
- <section id="home" class="banner" style="height: 925px; margin-bottom: 50px;">
+
+ <section id="lead-banner" style="height: 425px; margin-bottom: 50px;">
       <div class="1-subsection">       
       </div>
   </section>
@@ -23,43 +41,20 @@
            </p>
  
         </div>
-
-      </div>
+    </div>
   </div>
   
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </section>
   <header>
     <h1>Team 2 - a piece of pi</h1>
   </header>
-  <nav>
+  <nav id="main-navigation">
     <ul>
-      <li>Blog</li>
+      <li><a href="#">Blog</a></li>
       <li><a href="./about.html">About</a></li>
       <hr>
-      <li>We don't know</li>
-      <li>what is going here yet</li>
+      <li><a href="#">We don't know</li>
+      <li><a href="#">what is going here yet</li>
     </ul>
   </nav>
   <p>I am an intro to the blog</p>

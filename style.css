@@ -1,0 +1,14 @@
+body {
+  background-color: silver;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+  color: gray;
+}

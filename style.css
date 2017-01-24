@@ -1,6 +1,10 @@
 body {
-  background-color: silver;
   font-family: sans-serif;
+  width: 980px;
+  margin: 0px auto;
+  background-color: #2c3e50;
+  color:#ecf0f1;
+  text-align: center;
 }
 
 h1 {
@@ -12,3 +16,39 @@ p {
   font-size: 1.5em;
   color: gray;
 }
+
+ul{
+  width: 100%;
+  list-style-type:none; /* removes bullet points from unordered list */
+  display: inline-block;
+  text-align: center;
+  display: table; /* to enable even spread of link over horizontal nav */
+  float: right;
+}
+
+
+li{
+  display: inline-block;
+  font-size: 1.5em;
+  display: table-cell;
+}
+
+a
+{
+  text-decoration: none; /* removes hyperlink look */
+  color: #ecf0f1;
+}
+
+a:hover
+{
+  color: tomato; /* #ff6347 */
+  /*border-bottom: solid tomato; underline instead? */
+}
+
+/* Active state o be decided*/
+
+a:active
+{
+  color: tomato; /* #ff6347 */
+}
+

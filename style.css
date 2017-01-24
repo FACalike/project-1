@@ -1,7 +1,27 @@
+/* base styles */
+
 body {
-  background-color: silver;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
+  background-color: #2c3e50;
+  color:#ecf0f1;
+  position: relative;
 }
+
+a {
+  text-decoration: none; /* removes hyperlink look */
+  color: #ecf0f1;
+}
+
+a:hover {
+  color: tomato; /* #ff6347 */
+  /*border-bottom: solid tomato; underline instead? */
+}
+
+a:active {
+  color: tomato; /* #ff6347 */
+}
+
+/* page elements */
 
 h1 {
   color: white;
@@ -11,4 +31,54 @@ h1 {
 p {
   font-size: 1.5em;
   color: gray;
+}
+
+/* menu stuff */
+
+label[for='menu-button'] i {
+  font-size: 3rem;
+}
+
+#navbar {
+  background: #2c3e50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#menu-button {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+#menu-button:checked + ul {
+  display: none;
+}
+
+#menu-bar {
+  list-style-type: none; /* removes bullet points from unordered list */
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  display: table-cell;
+}
+
+/* end of menu stuff */
+
+/* this is a fixed distance to push things under the navbar */
+header {
+  margin-top: 150px;
+}
+
+/* helper classes */
+
+.center {
+  text-align: center;
 }

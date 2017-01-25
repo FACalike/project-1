@@ -6,7 +6,6 @@ body {
   color:#ecf0f1;
   position: relative;
   width: 100%;
-  padding-bottom: 14rem;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -85,10 +84,6 @@ header {
 /* footer */
 
 footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
   padding: 0;
   text-align: center;
   background-color: black;
@@ -98,6 +93,7 @@ footer {
 .footer-bar {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
   padding: 0;
 }
 
@@ -114,14 +110,37 @@ footer li {
 }
 
 .gh-img {
-  width: 35%;
+  width: 50%;
+  border: white solid 2px;
+  border-radius: 50%;
 }
 
 #heart {
   color: red;
   width: 24px;
+  display: run-in;
 }
 /* end of footer */
+
+/* header */
+
+  /*perhaps a nice background in the header?*/
+
+/* end of header */
+
+/* posts */
+
+.post {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+
+
+
+/* end of posts */
 
 /* helper classes */
 

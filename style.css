@@ -33,7 +33,6 @@ a:active {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 2rem;
 }
 
 /* ---navbar/menu stuff--- */
@@ -98,7 +97,7 @@ header {
 /* ---posts--- */
 
 .post {
-  margin: 0;
+  margin: 0 2rem;
   padding-bottom: 2rem;
   font-size: 1.2rem;
 }

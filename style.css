@@ -1,4 +1,6 @@
-/* base styles */
+/*=============*/
+/* BASE STYLES */
+/*=============*/
 
 body {
   font-family: 'Lato', sans-serif;
@@ -8,14 +10,8 @@ body {
   margin: 0;
 }
 
-.site-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
 a {
-  text-decoration: none; /* removes hyperlink look */
+  text-decoration: none;
   color: #ecf0f1;
 }
 
@@ -28,19 +24,19 @@ a:active {
   color: tomato; /* #ff6347 */
 }
 
-/* page elements */
+/*===============*/
+/* PAGE ELEMENTS */
+/*===============*/
 
-h1 {
-  color: white;
-  font-size: 2em;
+#page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
-p {
-  font-size: 1.5em;
-  color: gray;
-}
+/* ---navbar/menu stuff--- */
 
-/* menu stuff */
 
 label[for='menu-button'] i {
   font-size: 3rem;
@@ -52,6 +48,7 @@ label[for='menu-button'] i {
   top: 0;
   width: 100%;
   text-align: center;
+  border-bottom: white 2px dashed;
 }
 
 #menu-button {
@@ -71,20 +68,43 @@ label[for='menu-button'] i {
   justify-content: space-around;
 }
 
-li {
+#menu-bar .option {
   display: inline-block;
-  font-size: 1.5em;
-  display: table-cell;
+  font-size: 1.5rem;
 }
 
-/* end of menu stuff */
+/* ---end of menu stuff--- */
 
-/* this is a fixed distance to push things under the navbar */
+/* ---header--- */
+
+header .main-title {
+  color: white;
+  font-size: 2rem;
+}
+
+header .subtitle {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+/* this is a fixed distance to push things under the navbar/menu */
 header {
   margin-top: 115px;
 }
 
-/* footer */
+/* ---end of header--- */
+
+/* ---posts--- */
+
+.post {
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* ---end of posts--- */
+
+/* ---footer--- */
 
 footer {
   padding: 0;
@@ -123,29 +143,12 @@ footer li {
   width: 24px;
   display: run-in;
 }
-/* end of footer */
 
-/* header */
+/* ---end of footer--- */
 
-  /*perhaps a nice background in the header?*/
-
-/* end of header */
-
-/* posts */
-
-.post {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding-bottom: 2rem;
-  font-size: 1.2rem;
-}
-
-
-
-
-/* end of posts */
-
-/* helper classes */
+/*================*/
+/* HELPER CLASSES */
+/*================*/
 
 .center {
   text-align: center;

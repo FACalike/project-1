@@ -28,13 +28,6 @@ a:active {
 /* PAGE ELEMENTS */
 /*===============*/
 
-#page-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
 /* ---navbar/menu stuff--- */
 
 
@@ -87,9 +80,13 @@ header .subtitle {
   color: gray;
 }
 
+header .author {
+   /* Maybe we can add a bit of styling? */
+}
+
 /* this is a fixed distance to push things under the navbar/menu */
 header {
-  margin-top: 115px;
+  margin-top: 135px;
 }
 
 /* ---end of header--- */
@@ -118,12 +115,20 @@ footer {
   flex-direction: column;
   list-style-type: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .footer-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.footer-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
 }
 
 footer li {

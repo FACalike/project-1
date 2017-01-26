@@ -5,8 +5,15 @@ body {
   background-color: #2c3e50;
   color:#ecf0f1;
   position: relative;
+  margin: 0;
 }
 
+.site-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
 a {
   text-decoration: none; /* removes hyperlink look */
   color: #ecf0f1;
@@ -74,8 +81,69 @@ li {
 
 /* this is a fixed distance to push things under the navbar */
 header {
-  margin-top: 150px;
+  margin-top: 115px;
 }
+
+/* footer */
+
+footer {
+  padding: 0;
+  text-align: center;
+  background-color: black;
+  border-top: 2px solid gray;
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer li {
+  margin-top: 0.2rem;
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
+}
+
+.gh-img {
+  width: 50%;
+  border: white solid 2px;
+  border-radius: 50%;
+}
+
+#heart {
+  color: red;
+  width: 24px;
+  display: run-in;
+}
+/* end of footer */
+
+/* header */
+
+  /*perhaps a nice background in the header?*/
+
+/* end of header */
+
+/* posts */
+
+.post {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+
+
+
+/* end of posts */
 
 /* helper classes */
 

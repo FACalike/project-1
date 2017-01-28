@@ -1,14 +1,17 @@
-/* base styles */
+/*=============*/
+/* BASE STYLES */
+/*=============*/
 
 body {
   font-family: 'Lato', sans-serif;
   background-color: #2c3e50;
   color:#ecf0f1;
   position: relative;
+  margin: 0;
 }
 
 a {
-  text-decoration: none; /* removes hyperlink look */
+  text-decoration: none;
   color: #ecf0f1;
 }
 
@@ -21,19 +24,12 @@ a:active {
   color: tomato; /* #ff6347 */
 }
 
-/* page elements */
+/*===============*/
+/* PAGE ELEMENTS */
+/*===============*/
 
-h1 {
-  color: white;
-  font-size: 2em;
-}
+/* ---navbar/menu stuff--- */
 
-p {
-  font-size: 1.5em;
-  color: gray;
-}
-
-/* menu stuff */
 
 label[for='menu-button'] i {
   font-size: 3rem;
@@ -45,6 +41,7 @@ label[for='menu-button'] i {
   top: 0;
   width: 100%;
   text-align: center;
+  border-bottom: white 2px dashed;
 }
 
 #menu-button {
@@ -59,26 +56,146 @@ label[for='menu-button'] i {
 
 #menu-bar {
   list-style-type: none; /* removes bullet points from unordered list */
-  padding: 0;
+  padding: 0; /* menu bar inline with menu icon */
   display: flex;
   justify-content: space-around;
 }
 
-li {
+#menu-bar .option {
   display: inline-block;
-  font-size: 1.5em;
-  display: table-cell;
+  font-size: 1.5rem;
 }
 
-/* end of menu stuff */
+/* ---end of menu stuff--- */
 
-/* this is a fixed distance to push things under the navbar */
+/* ---header--- */
+
+header .main-title {
+  color: white;
+  font-size: 2rem;
+}
+
+header .subtitle {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+/* this is a fixed distance to push things under the navbar/menu */
 header {
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
-/* helper classes */
+/* ---end of header--- */
+
+/* ---posts--- */
+
+.posts-wrapper {
+  margin: 0;
+  padding: 0 2rem;
+}
+
+.post {
+  margin: 0;
+  padding-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* ---end of posts--- */
+
+/* ---footer--- */
+
+footer {
+  padding: 0;
+  text-align: center;
+  background-color: black;
+  border-top: 2px solid gray;
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer li {
+  margin-top: 0.2rem;
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
+}
+
+.gh-img {
+  width: 50%;
+  border: white solid 2px;
+  border-radius: 50%;
+}
+
+#heart {
+  color: red;
+  width: 24px;
+  display: run-in;
+}
+
+/* ---end of footer--- */
+
+/*================*/
+/* HELPER CLASSES */
+/*================*/
 
 .center {
   text-align: center;
+}
+
+/* organise project thumbnails */
+
+
+
+.picture-body {
+    display: inline;
+}
+.picture-group {
+  width: 100%;
+  text-align: center;
+  height: 400px;
+  border: 1px solid black;
+}
+
+/* turned projects in to hyper links with stying */
+.projects-wrapper {
+    text-align: center;
+}
+
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+    width: auto;
+  
+}
+
+/* added pseudo class to projects */
+.flex-container a:hover {
+   background-color: aquamarine;
+}
+
+.project-box{
+    border-radius: 10%;
+	height: 150px;
+    padding: 20px;
+    margin: 10px;
+	flex-grow: 3;
+	flex-shrink: 3;
+	flex-basis: 33.3333%;
+	flex-basis: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    border: 3px solid black;
 }

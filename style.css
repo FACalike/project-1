@@ -166,3 +166,13 @@ footer li {
 .center {
   text-align: center;
 }
+
+.dec-link {
+  font-weight: 700;
+  text-decoration: underline;
+  color: limegreen;
+}
+
+.dec-link:visited {
+  color: #cfc;
+}

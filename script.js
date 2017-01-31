@@ -6,17 +6,15 @@
 
   req.onload = function() {
     if(req.readyState === 4) {
-      if(req.status === 200){
         var data = JSON.parse(req.responseText);
-        quote.innerHTML = data.quoteText;
-        author.innerHTML = data.quoteAuthor;
+        var rand = Math.floor(Math.random()*4);
+        quote.innerHTML = data.quotes[rand].quote;
+        author.innerHTML = data.quotes[rand].author;
       } else {
         console.log("An error occured");
       }
     }
-  }
-
-  req.open('Get', 'http://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en');
+  req.open('Get', './quotes.json');
   req.send();
 
 })();

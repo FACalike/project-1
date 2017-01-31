@@ -5,7 +5,7 @@
   var author = document.querySelector('.author');
 
   req.onload = function() {
-    if(req.readyState === 4) {
+    if (req.readyState === 4) {
         var data = JSON.parse(req.responseText);
         var rand = Math.floor(Math.random()*data.quotes.length);
         quote.innerHTML = data.quotes[rand].quote;
@@ -14,7 +14,7 @@
         console.log("An error occured");
       }
     }
-  req.open('Get', './quotes.json');
+  req.open('GET', './quotes.json');
   req.send();
 
 })();

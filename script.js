@@ -7,7 +7,7 @@
   req.onload = function() {
     if(req.readyState === 4) {
         var data = JSON.parse(req.responseText);
-        var rand = Math.floor(Math.random()*4);
+        var rand = Math.floor(Math.random()*data.quotes.length);
         quote.innerHTML = data.quotes[rand].quote;
         author.innerHTML = data.quotes[rand].author;
       } else {

@@ -10,6 +10,12 @@ body {
   margin: 0;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 h2 {
   color: #F6F7D3;
 }
@@ -64,7 +70,7 @@ label[for='menu-button'] i {
   justify-content: space-around;
 }
 
-#menu-bar .option {
+#menu-bar .menu-option {
   display: inline-block;
   font-size: 1.5rem;
 }
@@ -99,6 +105,7 @@ header {
 .posts-wrapper {
   margin: 0;
   padding: 0 2rem;
+  flex: 1;
 }
 
 .post {
@@ -116,6 +123,7 @@ footer {
   text-align: center;
   background-color: #495664;
   border-top: 2px solid white;
+  flex: none;
 }
 
 .footer-bar {

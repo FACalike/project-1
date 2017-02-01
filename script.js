@@ -1,20 +1,24 @@
 (function() {
   'use strict';
-  var req = new XMLHttpRequest();
-  var quote = document.querySelector('.subtitle');
-  var author = document.querySelector('.author');
-
-  req.onload = function() {
-    if (req.readyState === 4) {
-        var data = JSON.parse(req.responseText);
-        var rand = Math.floor(Math.random()*data.quotes.length);
-        quote.innerHTML = data.quotes[rand].quote;
-        author.innerHTML = data.quotes[rand].author;
+  function ajaxRequest(type, path) {
+    var req = new XMLHttpRequest();
+    req.open(type, path);
+    req.send();
+    req.onload = function() {
+      if(req.readyState === 4 && req.status === 200) {
+        return updateDOM(JSON.parse(req.responseText));
       } else {
-        console.log("An error occured");
+        return req;
       }
     }
-  req.open('GET', './quotes.json');
-  req.send();
+  };
 
+  function updateDOM(returnedJSON) {
+    var quote = document.querySelector('.subtitle');
+    var author = document.querySelector('.author');
+    var rand = Math.floor(Math.random()*returnedJSON.quotes.length);
+    quote.innerHTML = returnedJSON.quotes[rand].quote;
+    author.innerHTML = returnedJSON.quotes[rand].author;
+  }
+  ajaxRequest('GET', './quotes.json');
 })();

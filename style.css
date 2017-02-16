@@ -4,15 +4,24 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #2c3e50;
-  color:#ecf0f1;
+  background-color: #333C4A;
+  color:#F8FCEB;
   position: relative;
   margin: 0;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+h2 {
+  color: #F6F7D3;
+}
 a {
   text-decoration: none;
-  color: #ecf0f1;
+  color: white;
 }
 
 a:hover {
@@ -36,12 +45,12 @@ label[for='menu-button'] i {
 }
 
 #navbar {
-  background: #2c3e50;
+  background: #495664;
   position: fixed;
   top: 0;
   width: 100%;
   text-align: center;
-  border-bottom: white 2px dashed;
+  border-bottom: white 2px solid;
 }
 
 #menu-button {
@@ -61,7 +70,7 @@ label[for='menu-button'] i {
   justify-content: space-around;
 }
 
-#menu-bar .option {
+#menu-bar .menu-option {
   display: inline-block;
   font-size: 1.5rem;
 }
@@ -80,9 +89,13 @@ header .subtitle {
   color: gray;
 }
 
+header .author {
+   /* Maybe we can add a bit of styling? */
+}
+
 /* this is a fixed distance to push things under the navbar/menu */
 header {
-  margin-top: 130px;
+  margin-top: 135px;
 }
 
 /* ---end of header--- */
@@ -92,10 +105,11 @@ header {
 .posts-wrapper {
   margin: 0;
   padding: 0 2rem;
+  flex: 1;
 }
 
 .post {
-  margin: 0;
+  margin: 0 2rem;
   padding-bottom: 2rem;
   font-size: 1.2rem;
 }
@@ -107,8 +121,9 @@ header {
 footer {
   padding: 0;
   text-align: center;
-  background-color: black;
-  border-top: 2px solid gray;
+  background-color: #495664;
+  border-top: 2px solid white;
+  flex: none;
 }
 
 .footer-bar {
@@ -122,7 +137,14 @@ footer {
 .footer-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.footer-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
 }
 
 footer li {
@@ -137,7 +159,7 @@ footer li {
   border-radius: 50%;
 }
 
-#heart {
+.heart {
   color: red;
   width: 24px;
   display: run-in;
@@ -151,4 +173,14 @@ footer li {
 
 .center {
   text-align: center;
+}
+
+.dec-link {
+  font-weight: 700;
+  text-decoration: underline;
+  color: limegreen;
+}
+
+.dec-link:visited {
+  color: #cfc;
 }
